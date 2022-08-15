@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VFVRZKPWQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-8VFVRZKPWQ');
+    </script>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        border-radius: 20px 20px 20px 20px;
+      }
+      .grid-container > div {
+        background-color: rgba(15, 15, 15, 0.7);
+        border-radius: 20px 20px 20px 20px;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+      .grid-container a{
+          float: right;
+          color: rgba(230, 230, 230);
+          text-align: center;
+          padding: 1px 1px;
+          padding-right: 12px;
+          text-decoration: none;
+          font-size: 32px;
+          font-family: sans-serif;
+      }
+      .grid-container a:hover{
+        color: lightslategray;
+      }
+      .topnav-right a {
+        color: white !important;
+      }
+      .item:hover{
+        transform: scale(1.015);
+        box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+      }
+      article {
+        background-image: url('backgrounds/obba sunki.PNG');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      h1 {
+        color: white;
+        text-align: left;
+        font-size: 40px;
+      }
+      P {
+        color: white;
+      }
+      body {
+        background-color: rgba(0,30,56,255);
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- page title -->
+    <title>More | Infinite Search</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style="background-color:#001e38;">
+    <script src="script.js"></script>
+	  <!-- menu bar -->
+    <div class="topnav" style="background-color:#001e38;" align="center">
+	    <a href="/">
+		    <img src="logos/Infinite_Study_color.png" alt="Infinite Study Logo" width="90" height="40">
+      </a>
+      <form name="web search" action="search.html"> 
+        <input id="search" name="q" size="75" type="text" placeholder="Search the web" onsubmit="return validateForm()" required/><input id="rcorners" value="Search" type="submit" autofocus style="cursor:pointer"/> 
+
+      <!-- Right menu bar -->
+      <div class="topnav-right">
+        <a href="/changelog.html">Changelog</a>
+        <a href="https://infinitestudy.weebly.com/updates/infinite-study-search">About</a>
+      </div>
+    </div>
+    <!-- end of menu bar -->
+    <!-- Content below-->
+    <article>
+      <h1>♾️ Infinite Group</h1>
+      <br><br><br><br><br><br>
+      <p>Top Infinite Products: </p>
+      <div class="grid-container" style="grid-auto-flow: row;">
+        <div class="item">
+          <img src="logos/Infinite_Study_logo.png" alt="Infinite Study Logo" width="55" height="55">
+          <a href="https://infinitestudy.weebly.com/" target="_blank">Infinite Study</a></div>
+        <div class="item">
+          <img src="logos/Infinite_Search_logo.png" alt="Infinite Study Logo" width="55" height="55">
+          <a href="https://search.infinitestudy.repl.co/" target="_blank">Infinite Search</a></div>
+        <div class="item">
+          <img src="logos/Infinite_Study_orange.png" alt="Infinite App Logo" width="55" height="55">
+          <a href="/app_store.html" target="_blank">App Store</a></div>
+        </div>
+      </div> 
+      <br><br><br>
+      <p>All Infinite Products: </p>
+      <div class="grid-container" style="grid-auto-flow: row;">
+        <div class="item">
+          <img src="logos/Infinite_Bundle_logo.png" alt="Infinite Bundle Logo" width="55" height="55">
+          <a href="https://sites.google.com/view/infinitebundle/" target="_blank">Infinite Bundle</a></div>
+        <div class="item">
+          <img src="logos/Infinite_Study_logo.png" alt="Infinite Study Logo" width="55" height="55">
+          <a href="https://infinitestudy.weebly.com/" target="_blank">Infinite Study</a></div>
+        <div class="item">
+          <img src="logos/Infinite_Search_logo.png" alt="Infinite Search Logo" width="55" height="55">
+          <a href="https://search.infinitestudy.repl.co/" target="_blank">Infinite Search</a></div>
+        <div class="item">
+          <img src="logos/Infinite_Study_orange.png" alt="Infinite App Logo" width="55" height="55">
+          <a href="/app_store.html" target="_blank">App Store</a></div>
+        <div class="item">
+          <img src="logos/Infinite_News_logo.png" alt="Infinite News Logo" width="55" height="55">
+          <a href="https://sites.google.com/view/infinitestudynews" target="_blank">Infinite News</a></div>
+        <div class="item">
+          <img src="logos/Weather_forecast_logo.png" alt="Weather Forecast Logo" width="55" height="55">
+          <a href="/interactive/weather.html" target="_blank">Weather Forecast</a>
+        </div>
+        <div class="item">
+          <img src="logos/Chess_Hub_logo.png" alt="Chess Hub Logo" width="55" height="55">
+          <a href="/interactive/chess-hub.html" target="_blank">Chess Hub</a>
+        </div>
+      </div> 
+    </article>     
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VFVRZKPWQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-8VFVRZKPWQ');
+  </script>
+  <style>
+    #queries {
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      float: right;
+      border-radius: 15px 15px 15px 15px;
+      border: 2px solid #ECECEC;
+      background: #FBFBFB;
+      width: 150px;
+      margin-top: 50px;
+      margin-right: 50px;
+      font-size: 20px;
+      font-family: sans-serif;
+      color: grey;
+      position: fixed;
+      right: 0;
+      top: 10;
+    }
+    #queries a{
+      color: #FFA500;
+      text-decoration: none;
+    }
+    #queries a:hover{
+      color:#ff4500;
+      text-decoration: underline;
+    }
+    #queries:hover {
+      transform: scale(1.015);
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+    }
+    .topnav {
+      box-shadow: 0 4px 3px 0.5px rgba(0, 0, 0, 0.1);
+    }
+    .gs-title, .gs-snippet {
+        font-family: sans-serif;
+    }
+    .gs-title { 
+        font-size: 18px !important;  
+    }
+    .gs-title b{
+      font-size: 18px !important;  
+    } 
+    .gs-title b, .gs-snippet b {
+      font-weight: normal;
+      color: red;
+    }
+    .gs-snippet {
+      font-size: 14px !important;  
+    }
+    .gsc-cursor-page {
+      font-size: 1em;
+      padding: 2px 4px;
+      border: 1px solid #ccc;
+      border-radius: 10px 10px 10px 10px;
+      border: 2px solid #ffffff !important;
+      background: #ECECEC !important;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+    } 
+  </style>
+	<!-- page title -->
+	<title>Results - Infinite Search</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	  <!-- menu bar -->
+    <div class="topnav">
+	    <a href="/">
+		    <img src="logos/Infinite_Study_color.png" alt="Infinite Study Logo" width="90" height="40">
+      </a>
+      <form name="web search" action="search.html"> 
+        <input id="search" name="q" size="75" type="text" placeholder="Search the web" onsubmit="return validateForm()" required/><input id="rcorners" value="Search" type="submit" autofocus style="cursor:pointer"/> 
+
+      <!-- Right menu bar -->
+      <div class="topnav-right">
+        <a href="/changelog.html">Changelog</a>
+        <a href="https://infinitestudy.weebly.com/updates/infinite-study-search">About</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- end of menu bar -->
+    
+    <!-- Content below-->
+    <div class="results">
+      <script async src="https://cse.google.com/cse.js?cx=b5282022c45f54ca1"></script>
+      <div class="gcse-searchresults-only"></div>
+    </div>
+    <div id="queries">Trending🔥</br>
+    </div>
+    <script src="https://cse.google.com/query_renderer.js"></script>
+    <script src="https://cse.google.com/api/b5282022c45f54ca1/popularqueryjs?view=month&callback=(new+PopularQueryRenderer(document.getElementById(%22queries%22))).render"></script>
+  </body>
+</html>

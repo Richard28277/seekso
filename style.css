@@ -1,0 +1,134 @@
+/* Add a  background color to the top navigation */
+.topnav {
+  background-color: white;
+  display: block;
+  overflow: hidden;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 18px;
+  padding-bottom: 6px;
+  position: fixed;
+  top: 0;
+  width:100%;
+  z-index: 1; 
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #1d1d1d;
+  text-align: center;
+  padding: 1px 1px;
+  padding-right: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: blue;
+}
+/* Add a color to the active/current link */
+.topnav a:active {
+  color: #003cff;
+}
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  padding-right: 40px;
+}
+
+/* content of the homepage */
+.island {
+  float: center;
+  color: #464646;
+  text-align: center;
+  padding: 60px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+} 
+
+/* search bar (homepage)*/
+.searchBar {
+  padding-top: 25px;
+}
+/* search bar general */
+#search {
+  border-radius: 15px 0.1px 0.1px 15px;
+    border: 2px solid rgb(197, 197, 197);
+    padding: 20px; 
+    width: 40%;
+    max-width: 550px;
+    height: 0.5px;
+    font-size: 17px;   
+    outline: none; 
+  transition: 0.2s;
+}
+#search:hover {
+  border: 2px solid rgb(60, 144, 255);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#search:active {
+  border: 2px solid rgb(94, 137, 255);
+}
+/* search bar button */
+#rcorners {
+  border-radius: 0.1px 15px 15px 0.1px;
+  -webkit-border-radius: 0.1px 15px 15px 0.1px;
+  -webkit-appearance: none;
+  background: rgb(51, 105, 255);
+  border: 1px solid rgb(51, 105, 255);
+  width: 115px;
+  height: 44.5px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  outline: none;
+  transition: 0.3s;
+}
+#rcorners:hover {
+  background: #5c87ff;
+  border: 0.1px solid #5c87ff;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* results formatting */
+.results {
+  float: left;
+  color: #000000;
+  text-align: left;
+  padding-left: 120px;
+  text-decoration: none;
+  width: 600px;
+  height: 150px;
+  z-index: 0; 
+} 
+/* anouncement box on homepage */
+center {
+  border-style: solid;
+  border-radius: 10px;
+  border: 1.5px solid rgb(199, 199, 199);
+  margin-top:130px;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-size: 17px; 
+}
+body{
+  margin-top: 62px;
+  background-color: white;
+  margin-left: 0px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+article {
+  margin-top: 100px;
+  font-family: "Helvetica";
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
