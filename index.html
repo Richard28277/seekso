@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VFVRZKPWQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-8VFVRZKPWQ');
+  </script>
+  <style>
+    #queries {
+      font-size: 14px;
+      font-family: sans-serif;
+      color: grey;
+    }
+    #queries a{
+      color: grey;
+      text-decoration: none;
+    }
+    #queries a:hover{
+      color: lightcoral;
+      text-decoration: underline;
+    }
+  </style>
+	<!-- page title -->
+	<title>Infinite Search</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+	<!-- menu bar -->
+	<div class="topnav">
+		<a href="https://infinitestudy.weebly.com/">Learn</a>
+		<a href="https://infinitestudy.weebly.com/updates">News</a>
+		<a href="https://infinitestudy.weebly.com/contact.html">Contact</a>
+    <a href="/more.html">More</a>
+		<!-- Right menu bar -->
+		<div class="topnav-right">
+			<a href="/changelog.html">Changelog</a>
+			<a href="https://infinitestudy.weebly.com/updates/infinite-study-search">About</a>
+		</div>
+	</div>
+	
+	<!-- Content below-->
+	<div class="island">
+		<img src="logos/Infinite_Study_color.png" alt="Infinite Study Logo" width="300" height="130">
+      <div class="searchBar">
+        <form name="web search" action="search.html"> 
+        <input id="search" name="q" size="75" type="text" placeholder="Search for Research Content" onsubmit="return validateForm()" required/><input id="rcorners" value="Search" type="submit" autofocus style="cursor:pointer"/> 
+        </form> 
+        <div id="queries">🔥Trending: </div>
+        <script src="https://cse.google.com/query_renderer.js"></script>
+        <script src="https://cse.google.com/api/b5282022c45f54ca1/popularqueryjs?view=month&callback=(new+PopularQueryRenderer(document.getElementById(%22queries%22))).render"></script>
+      </div>
+      <center style="font-family:sans-serif">
+        The Secure Search Engine for Students and Researchers<a href=""></a></center>
+    </div>
+  </body>
+</html>
