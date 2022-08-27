@@ -55,7 +55,7 @@
 }
 /* search bar general */
 #search {
-  border-radius: 15px 0.1px 0.1px 15px;
+  border-radius: 15px 10px 10px 15px;
     border: 2px solid rgb(197, 197, 197);
     padding: 20px; 
     width: 40%;
@@ -74,8 +74,8 @@
 }
 /* search bar button */
 #rcorners {
-  border-radius: 0.1px 15px 15px 0.1px;
-  -webkit-border-radius: 0.1px 15px 15px 0.1px;
+  border-radius: 10px 15px 15px 10px;
+  -webkit-border-radius: 10px 15px 15px 10px;
   -webkit-appearance: none;
   background: rgb(51, 105, 255);
   border: 1px solid rgb(51, 105, 255);
@@ -86,11 +86,11 @@
   font-weight: bold;
   outline: none;
   transition: 0.3s;
+  margin-left:5px;
 }
 #rcorners:hover {
   background: #5c87ff;
   border: 0.1px solid #5c87ff;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* results formatting */
