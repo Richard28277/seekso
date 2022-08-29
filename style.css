@@ -132,3 +132,31 @@ article {
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 800px) {
+  .results{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding-left:0.01px;
+  }
+  .topnav {
+    margin-left:0.1px;
+    padding-left: 0.01px;
+    padding-right: 0.01px;
+  }
+  #branding {
+    display: none;
+  }
+  article {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-left:0.01px;
+    padding-left: 0.01px;
+    margin-right: 0.1px;
+  }
+  .island {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-left:0.01px;
+    padding-left: 0.01px;
+    margin-right: 0.001px;
+    padding-right:0.001px;
+  }
+}
