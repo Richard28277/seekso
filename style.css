@@ -56,18 +56,19 @@
 /* search bar general */
 #search {
   border-radius: 15px 10px 10px 15px;
-    border: 2px solid rgb(197, 197, 197);
-    padding: 20px; 
-    width: 40%;
-    max-width: 550px;
-    height: 0.5px;
-    font-size: 17px;   
-    outline: none; 
+  border: 2px solid white;
+  padding: 20px; 
+  width: 40%;
+  max-width: 550px;
+  height: 0.5px;
+  font-size: 17px;   
+  outline: none; 
   transition: 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
 }
 #search:hover {
   border: 2px solid rgb(60, 144, 255);
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: none;
 }
 #search:active {
   border: 2px solid rgb(94, 137, 255);
@@ -87,10 +88,12 @@
   outline: none;
   transition: 0.3s;
   margin-left:5px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 }
 #rcorners:hover {
   background: #5c87ff;
   border: 0.1px solid #5c87ff;
+  box-shadow: none;
 }
 
 /* results formatting */
@@ -104,6 +107,37 @@
   height: 150px;
   z-index: 0; 
 } 
+@media screen and (max-width: 800px) {
+  .results{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    padding-left:0.01px;
+  }
+  .topnav {
+    margin-left:0.1px;
+    padding-left: 0.01px;
+    padding-right: 0.01px;
+  }
+  #branding {
+    display: none;
+  }
+  article {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-left:0.01px;
+    padding-left: 0.01px;
+    margin-right: 0.1px;
+  }
+  .island {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-left:0.01px;
+    padding-left: 0.01px;
+    margin-right: 0.001px;
+    padding-right:0.001px;
+  }
+  center {
+    margin-left: 1%;
+  margin-right: 1%;
+  }
+}
 /* anouncement box on homepage */
 center {
   border-style: solid;
@@ -131,32 +165,4 @@ article {
   padding: 10px;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (max-width: 800px) {
-  .results{
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    padding-left:0.01px;
-  }
-  .topnav {
-    margin-left:0.1px;
-    padding-left: 0.01px;
-    padding-right: 0.01px;
-  }
-  #branding {
-    display: none;
-  }
-  article {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    margin-left:0.01px;
-    padding-left: 0.01px;
-    margin-right: 0.1px;
-  }
-  .island {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    margin-left:0.01px;
-    padding-left: 0.01px;
-    margin-right: 0.001px;
-    padding-right:0.001px;
-  }
 }
