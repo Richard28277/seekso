@@ -123,7 +123,7 @@
   }
   article {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    margin-left:0.01px;
+    margin-left:0.01px !important;
     padding-left: 0.01px;
     margin-right: 0.1px;
   }
