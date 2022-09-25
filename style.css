@@ -167,3 +167,20 @@ article {
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
+button {
+  border-radius: 40px 40px 40px 40px;
+  -webkit-border-radius: 40x 40px 40px 40px;
+  -webkit-appearance: none;
+  background: rgb(51, 105, 255);
+  border: 1px solid rgb(51, 105, 255);
+  width: 13%;
+  height: 44.5px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  outline: none;
+  transition: 0.3s;
+  margin-left:0.5px;
+  margin-right: 0.5px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+}
