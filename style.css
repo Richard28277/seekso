@@ -118,6 +118,9 @@
     padding-left: 0.01px;
     padding-right: 0.01px;
   }
+  .topnav-right {
+    display:none;
+  }
   #branding {
     display: none;
   }
